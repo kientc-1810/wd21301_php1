@@ -55,7 +55,7 @@ unset($_SESSION['success'], $_SESSION['error']);
                             <form action="<?= BASE_URL?>?action=product/delete" class="d-inline" method="POST">
                                 <input type="hidden" name="id" value="<?= $product['id']?>">
                                 <button type="submit" class="btn btn-danger" 
-                                onclick="return confim('Bạn có chắc chắn muốn xóa sản phẩm <?=$product['name']?>')">Xóa</button>
+                                onclick="return confirm('Bạn có chắc chắn muốn xóa sản phẩm <?=$product['name']?>')">Xóa</button>
                             </form>
                         </td>
                     </tr>

@@ -10,4 +10,10 @@ match ($action) {
     'product/create' => (new ProductController)->create(),
     // xử lý thêm
     'product/store' => (new ProductController)->store(),
+    // form sửa
+    'product/edit' => (new ProductController)->edit(),
+    // xử lý sửa
+    'product/update' => (new ProductController)->update(),
+    // xử lý xóa
+    'product/delete' => (new ProductController)->delete(),
 };
